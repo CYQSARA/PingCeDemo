@@ -1,0 +1,72 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: saddlebrown;
+}
+
+.userinfo-avatar {
+  width: 228rpx;
+  height: 228rpx;
+  /* border-radius: 20%; */
+
+  /* border-width: 10px;
+  border-color: #ddd;
+  border-style: outset; */
+  border: 10px outset #ddd;
+
+margin: 120rpx; /*上、右、下、左*/
+padding: 60rpx;   /*上、右、下、左*/
+
+background-color: seagreen;
+
+}
+
+.userinfo-avatar:active {
+  width: 228rpx;
+  height: 228rpx;
+  /* border-radius: 20%; */
+
+  /* border-width: 10px;
+  border-color: #ddd;
+  border-style: outset; */
+  border: 10px outset #ddd;
+
+margin: 120rpx; /*上、右、下、左*/
+padding: 60rpx;   /*上、右、下、左*/
+
+background-color: red;
+
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+/* *{
+  margin: 10px;
+} */
+.userinfo text {/*包含选择器*/
+  color: red;
+}
+
+/* .userinfo > text {子元素选择器
+  color: red;
+} */
+
+/* .usermotto + view {临近兄弟选择器 
+  color: red;
+} */
+
+/* .userinfo ~ view {通用兄弟选择器 
+  color: red;
+} */
+
+view[bindgetuserinfo]{
+  background-color: red;
+}

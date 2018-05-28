@@ -1,0 +1,45 @@
+<view class="container">
+  <view class="section">
+    <swiper indicator-dots="true" autoplay="true" interval="{{3000}}" duration="{{1000}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="375" height="150" />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="section section-border">
+    <view class="header">
+      <text class="text-quality">精品推荐</text>
+      <text class="text-all">全部精品</text>
+    </view>
+    <view class='content'>
+      <view class='content-item' wx:for="{{qualityItems}}">
+        <image src='../../images/img1.png'></image>
+        <view class='content-item-text'>
+          <text>这里是标题</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="section">
+    <view class="header">
+      <text class="text-quality">热门评测</text>
+      <text class="text-all">全部评测</text>
+    </view>
+    <view class='list-item' wx:for="{{listItems}}">
+      <view class='lift-item-images'>
+        <image class='lift-item-images-img' src='../../images/img2.png'></image>
+        <image class='avator' src='../../images/avatar.png'></image>
+      </view>
+      <view class='left-item-text'>
+        <view class='left-item-text-title'>
+          <text>美丽风景，不容错过</text>
+        </view>
+        <view class='left-item-text-content'>
+          <text>或许你觉得很难，其实它真的很难，不过不要紧，或许你觉得很难，其实它真的很难，或许你觉得很难</text>
+        </view>       
+      </view>
+    </view>
+  </view>
+</view>
